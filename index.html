@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Index</title>
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    @media (max-width: 460px) {
+      body {
+        min-width: 0;
+      }
+
+      .container {
+        width: 100vw;
+        height: 100vh;
+        padding: 57px;
+      }
+
+      main.mob {
+        width: 0;
+        height: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .pointer {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <video id="v1" autoplay muted>
+    <source src="./video/index.mp4" type="video/mp4" />
+  </video>
+  <div class="pointer"></div>
+  <div class="container">
+    <header class="top-header">
+      <nav>
+        <div><a href="./about.html">About</a></div>
+        <div><a href="./calendar.html">Calendar</a></div>
+        <div><a href="./events.html">Events</a></div>
+        <div><a href="./contact.html">Contact</a></div>
+      </nav>
+    </header>
+    <main class="mob">
+      <h1 class="index-title">WELCOME</h1>
+      <div class="logo-box">
+        <div class="logo">
+          <span>DIRTY</span>
+          <span>HOUSE</span>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>
